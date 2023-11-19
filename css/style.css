@@ -13,6 +13,11 @@
     src: url(./texto-index.ttf);
 }
 
+@font-face {
+    font-family: titulo-main;
+    src: url(./titulo-main.Otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +30,6 @@ justify-content: space-between;
 align-items: center;
 background-color: rgb(205, 238, 255);
 box-shadow: 3px 3px 3px rgba(255, 148, 209, 0.537);
-margin-bottom: 5%;
 }
 
 .logo img { 
@@ -61,16 +65,31 @@ margin-bottom: 5%;
     background: #fff;
 }
 
-.titulo-main h1{
+h1{
+    padding: 1rem;
+}
+
+.titulo-index{
+    background: none;
+}
+
+.titulo-index h1{
     color: rgb(255, 148, 208);
     font-size: 100px;
     font-family: titulo-index;
 }
 
-.texto-main{
+.texto-index{
     font-family: texto-index;
     padding: 50px;
+    font-size: 20px;
     
+}
+
+.titulo-main{
+    color: rgb(132, 224, 252);
+    font-size: large;
+    font-family: titulo-index;
 }
 
 h2{
@@ -79,12 +98,24 @@ h2{
     font-size: 100px;
 }
 
-.main-index, .main-productos{
-    height:100vh;
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+.main-productos, .main-galeria {
+        background-image: url(../img/fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+/* PRODUCTOS */
+
+
+.main-productos{
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}  
 
 .fotos-productos {
     display: flex;
@@ -104,29 +135,13 @@ h2{
     transition: 1s;
 }
 
-.main-galeria{
-    display: flex;
-    flex-wrap: wrap;
+.contenedor-tabla{
+    width: 1000px;
 }
 
-.main-productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}  
-
-/* PRODUCTOS */
-
-table{
-    width: 600px;
-    background-color: rgba(255, 227, 243, 0.6);
-    font-family: gatolados;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000
-    }
+.table{
+    background: rgba(205, 238, 255, 0.9)
+}
 
 th{
     background-color: #fff;
@@ -136,37 +151,84 @@ th{
 
 td{
     padding: 10px;
+    font-size: 20px;
 }
 
+td img{
+    width: 100px;
+}
+
+
 /* GALERIA */
+
+
+.main-galeria{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.valoracion-container{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
 
 .valoracion{
     color: yellow;
     text-shadow: 1px 1px #000 ;
 }
 
-/* CONTACTO */
-
-form{
-    background:rgba(119, 118, 117, 0.921);
-    border-radius: 10px;
-    margin: 0 30%;
+.texto-reseña{
+    width: 50rem
 }
 
-.main-cotacto{
-    height: 100vh;
-    background-image: url(../img/fondo-contacto.png);
+
+/* CONTACTO */
+
+
+.main-contacto{
+    display: flex;
+    height: fit-content;
+    background-image: url(../img/contacto3.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
+form{
+    width: 30rem;
+    background:rgba(119, 118, 117, 0.521);
+    border-radius: 10px;
+    margin: 2%;
+    
+}
+
+.form {
+    width: 30rem;
+    background: rgba(119, 118, 117, 0.521);
+    border-radius: 10px;
+    margin: 2%;
+
+}
+
 form div{
-    padding: 30px;
+    padding: 1rem;
+    border-radius: 10px;
     color: rgb(5, 5, 5)
 }
 
 label{
-    color:rgb(255, 148, 208);
+    color:rgb(255, 255, 255);
+}
+
+.item-form{
+    display: flex;
+    gap: 20px;
 }
 
 /* FOOTER */
@@ -176,7 +238,7 @@ label{
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 3px -3px 3px rgba(255, 148, 209, 0.537);
-    /* border-top: 1px  solid #9d9d9d; */
+    background: rgb(205, 238, 255)
 }
 
 .copyright p{
@@ -185,6 +247,6 @@ label{
 }
 
 .redes a{
-    padding: 100px;
+    padding-left: 100px;
     text-decoration: none;
 }

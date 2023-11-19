@@ -9,6 +9,9 @@
     <link rel="favicon" href="">
     <link rel="shortcut icon" href="./img/logos1-png.png" type="image/x-icon">
     <link rel="icon" href="./img/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -20,57 +23,63 @@
                 <img src="./img/logo.jpg" alt="logo" class="logo">
             </a>
         </div>
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./productos.html">PRODUCTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./galeria.html">GALERIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.feelcats.com/razas-gatos/" target="_blank">GATOS</a>
-                        </li>
-                    </ul>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./galeria.html">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.feelcats.com/razas-gatos/" target="_blank">GATOS</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
-
-    <main>
+    
+    <main class="main-galeria">
+        
         <section class="container-carrusel">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="titulo-main">
+                    <h1>Experiencias de nuestros clientes</h1>
+                </div>
                 <div class="carousel-inner text-center">
-                    <div class="carousel-item active">
+                    
+                    <div class="carousel-item active" >
+                        
                         <div class="img-carrousel">
                             <img src="img/batidos.jpg" class="img-fluid" alt="torta de cumpleños de Candela"
                             height="auto" width="300px">
                         </div>
-                        <div class="valoracion-container d-flex">
+                        
+                        <div class="valoracion-container">
                             <div>
                                 <h3 class="valoracion">★★★★★</h3>
                                 <img src="img/angela&romina.jpg" class="img-fluid" alt="dos-mujeres-sentadas-costa-disfrutando-paletas-rojas"
                                 height="auto" width="200px">
                             </div>
+
                             <div class="texto-reseña">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore maiores ullam aut iusto doloremque atque qui eos
                                     voluptate, accusantium est sint provident sed itaque tempora blanditiis exercitationem amet ipsum ipsam unde iste
                                     commodi. Explicabo, debitis cupiditate. Dolor ducimus accusamus sint explicabo obcaecati iusto nihil repellat,
                                     tempore ab odit dolores. Explicabo, debitis cupiditate. Dolor ducimus accusamus sint explicabo obcaecati iusto nihil
                                     repellat, tempore ab odit
-                                    dolores.</p>
-                                    <p>Angela F. & Romina V.</p>
+                                    dolores.
+                                </p>
+                                <p>Angela F. & Romina V.</p>
                             </div>
 
                         </div>
@@ -82,14 +91,24 @@
                             width="300px">
                         </div>
                         <div class="valoracion-container d-flex">
-                            <h3 class="valoracion">★★★★★</h3>
-                            <img src="img/samanta&nicolle.jpg" class="img-fluid" alt="mujeres-comiendo-juntos-al-aire-libre" height="auto"
-                            width="200px">
+
+                            <div>
+                                <h3 class="valoracion">★★★★★</h3>
+                                <img src="img/samanta&nicolle.jpg" class="img-fluid" alt="dos-mujeres-sentadas-costa-disfrutando-paletas-rojas"
+                                    height="auto" width="200px">
                             </div>
+
                             <div class="texto-reseña">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore maiores ullam aut iusto doloremque atque qui eos
-                                    voluptate, accusantium est sint provident sed itaque tempora blanditiis exercitationem amet ipsum ipsam unde iste
-                                    commodi.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore maiores ullam aut iusto doloremque atque qui
+                                    eos
+                                    voluptate, accusantium est sint provident sed itaque tempora blanditiis exercitationem amet ipsum ipsam unde
+                                    iste
+                                    commodi. Explicabo, debitis cupiditate. Dolor ducimus accusamus sint explicabo obcaecati iusto nihil repellat,
+                                    tempore ab odit dolores. Explicabo, debitis cupiditate. Dolor ducimus accusamus sint explicabo obcaecati iusto
+                                    nihil
+                                    repellat, tempore ab odit
+                                    dolores.
+                                </p>
                                 <p>-Samanta J. & Nicolle A.</p>
                             </div>
                         </div>
@@ -101,14 +120,24 @@
                             width="300px">
                         </div>
                         <div class="valoracion-container d-flex">
-                            <h3 class="valoracion">★★★★★</h3>
-                            <img src="img/hector.jpg" class="img-fluid" alt="pareja-comiendo-helado-mientras-viaja" height="auto" width="200px">
-                        </div>
+                            <div>
+
+                                <h3 class="valoracion">★★★★★</h3>
+                                <img src="img/hector.jpg" class="img-fluid" alt="dos-mujeres-sentadas-costa-disfrutando-paletas-rojas"
+                                    height="auto" width="200px">
+                            </div>
+
                             <div class="texto-reseña">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore maiores ullam aut iusto doloremque atque qui eos
-                                    voluptate, accusantium est sint provident sed itaque tempora blanditiis exercitationem amet ipsum ipsam unde iste
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore maiores ullam aut iusto doloremque atque qui
+                                    eos
+                                    voluptate, accusantium est sint provident sed itaque tempora blanditiis exercitationem amet ipsum ipsam unde
+                                    iste
                                     commodi. Explicabo, debitis cupiditate. Dolor ducimus accusamus sint explicabo obcaecati iusto nihil repellat,
-                                    tempore ab odit dolores.</p>
+                                    tempore ab odit dolores. Explicabo, debitis cupiditate. Dolor ducimus accusamus sint explicabo obcaecati iusto
+                                    nihil
+                                    repellat, tempore ab odit
+                                    dolores.
+                                </p>
                                 <p>-Hector P.
                                 <p>
                             </div>
@@ -120,15 +149,28 @@
                             <img src="img/paletas.jpg" class="img-fluid" alt="torta de cumpleaños de Mateo y Mia "
                             height="auto" width="300px">
                         </div>
+
                         <div class="valoracion-container d-flex">
-                            <h3 class="valoracion">★★★★★</h3>
-                            <img src="img/vanesa.jpg" class="img-fluid" alt="mejores-amigos-tiro-medio-helado" height="auto" width="200px">
-                        </div>
+                            <div>
+                                <h3 class="valoracion">★★★★★</h3>
+                                <img src="img/angela&romina.jpg" class="img-fluid" alt="dos-mujeres-sentadas-costa-disfrutando-paletas-rojas"
+                                    height="auto" width="200px">
+                            </div>
 
                             <div class="texto-reseña">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore maiores ullam aut iusto doloremque atque!!!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore maiores ullam aut iusto doloremque atque qui
+                                    eos
+                                    voluptate, accusantium est sint provident sed itaque tempora blanditiis exercitationem amet ipsum ipsam unde
+                                    iste
+                                    commodi. Explicabo, debitis cupiditate. Dolor ducimus accusamus sint explicabo obcaecati iusto nihil repellat,
+                                    tempore ab odit dolores. Explicabo, debitis cupiditate. Dolor ducimus accusamus sint explicabo obcaecati iusto
+                                    nihil
+                                    repellat, tempore ab odit
+                                    dolores.
+                                </p>
                                 <p>-Vanesa L.</p>
                             </div>
+                        </div>
                     </div>
                 </div>
         </section>
