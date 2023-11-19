@@ -1,0 +1,190 @@
+@font-face {
+    font-family: gatolados;
+    src: url(./gatolados.ttf);
+}
+
+@font-face {
+    font-family: titulo-index;
+    src: url(./titulo-index.ttf);
+}
+
+@font-face {
+    font-family: texto-index;
+    src: url(./texto-index.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(205, 238, 255);
+box-shadow: 3px 3px 3px rgba(255, 148, 209, 0.537);
+margin-bottom: 5%;
+}
+
+.logo img { 
+    width: 100px;
+    margin-right: 50px;
+}
+.bg-light, .navbarSupportedContent{
+    background: rgb(205, 238, 255) !important;
+    padding: 0!important;
+}
+
+.collapse{
+    background: rgb(205, 238, 255) !important;
+        padding: 0 !important;
+}
+    /* border: 1px solid #000; */
+.nav{
+    font-family: gatolados;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+} 
+
+
+.nav a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 148, 208);    
+}
+.col, .row{
+    background: #fff;
+}
+
+.titulo-main h1{
+    color: rgb(255, 148, 208);
+    font-size: 100px;
+    font-family: titulo-index;
+}
+
+.texto-main{
+    font-family: texto-index;
+    padding: 50px;
+    
+}
+
+h2{
+    font-family: gatolados;
+    color: rgb(255, 148, 208);
+    font-size: 100px;
+}
+
+.main-index, .main-productos{
+    height:100vh;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fotos-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos-productos .card {
+    box-shadow: 5px 5px 5px rgba(218, 117, 34, 0.473);
+}
+
+.card .img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.main-galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}  
+
+/* PRODUCTOS */
+
+table{
+    width: 600px;
+    background-color: rgba(255, 227, 243, 0.6);
+    font-family: gatolados;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000
+    }
+
+th{
+    background-color: #fff;
+    padding: 10px;
+    background-color: rgb(255, 148, 208);
+}
+
+td{
+    padding: 10px;
+}
+
+/* GALERIA */
+
+.valoracion{
+    color: yellow;
+    text-shadow: 1px 1px #000 ;
+}
+
+/* CONTACTO */
+
+form{
+    background:rgba(119, 118, 117, 0.921);
+    border-radius: 10px;
+    margin: 0 30%;
+}
+
+.main-cotacto{
+    height: 100vh;
+    background-image: url(../img/fondo-contacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form div{
+    padding: 30px;
+    color: rgb(5, 5, 5)
+}
+
+label{
+    color:rgb(255, 148, 208);
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 3px -3px 3px rgba(255, 148, 209, 0.537);
+    /* border-top: 1px  solid #9d9d9d; */
+}
+
+.copyright p{
+    font-size: 25px;
+    margin: 0;
+}
+
+.redes a{
+    padding: 100px;
+    text-decoration: none;
+}
