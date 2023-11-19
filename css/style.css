@@ -61,6 +61,10 @@ box-shadow: 3px 3px 3px rgba(255, 148, 209, 0.537);
     list-style: none;
     color: rgb(255, 148, 208);    
 }
+.nav a:hover {
+    background-color: rgb(98, 200, 251);
+}
+
 .col, .row{
     background: #fff;
 }
@@ -109,7 +113,7 @@ h2{
 
 
 .main-productos{
-    height:fit-content;
+    height:750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,6 +145,10 @@ h2{
 
 .table{
     background: rgba(205, 238, 255, 0.9)
+}
+
+.table2 {
+    display: none;
 }
 
 th{

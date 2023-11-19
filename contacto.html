@@ -49,7 +49,7 @@
     </header>
 
     <main class="main-contacto">
-        <form>               
+        <form id="form">
             
             <div class="titulo-main">
                 <h1>Cuentanos tu experiencia!</h1>  
@@ -63,14 +63,12 @@
             <div class="input-group mb-3 item-form">
                 <label for="contacto">Contacto</label>
                 <span class="input-group-text">+54</span>
-                <input name="contacto" type="text" class="form-control" placeholder="Ingrese sunumero de teléfono" required>
+                <input name="contacto" type="number" class="form-control" placeholder="Ingrese su numero de teléfono" required>
             </div>
             
             <div class="input-group mb-3 item-form">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input name="email" type="text" class="form-control" placeholder="Email" aria-label="Username" required>
-                <span class="input-group-text">@</span>
-                <input type="text" class="form-control" placeholder="algo.com" aria-label="Server" required>
+                <input name="email" type="text" class="form-control" placeholder="alguien@algo.com" aria-label="Username" required>
             </div>
             
             <div class="input-group item-form">
@@ -78,7 +76,7 @@
                 <textarea name="comentario" class="form-control" aria-label="With textarea" required></textarea>
             </div>
             <div class="btn-enviar">
-                <button type="button" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </form>
 
@@ -112,5 +110,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
